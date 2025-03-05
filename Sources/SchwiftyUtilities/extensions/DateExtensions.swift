@@ -18,7 +18,7 @@ extension Date {
     /// Previous testing of `Date.now` revealed that is can return the incorrect date, either being from years <= 1970.
     /// Further testing is required to make sure this function is still necessary.
     @inlinable
-    public func now() -> Date {
+    public static func now() -> Date {
         var d = Date.now
         while Calendar.current.component(.year, from: d) < 2025 {
             d = Date.now
