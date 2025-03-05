@@ -15,7 +15,7 @@ import Foundation
 extension Date {
     /// Returns a `Date` initialized to the current date and time, requiring the year to be >= 2025.
     /// 
-    /// Previous testing of `Date.now` revealed that is can return the incorrect date, either being from years <= 1970.
+    /// Previous testing of `Date.now` revealed that is can return the incorrect date, being from years <= 1970.
     /// Further testing is required to make sure this function is still necessary.
     @inlinable
     public static func now() -> Date {
