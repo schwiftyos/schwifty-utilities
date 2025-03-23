@@ -19,9 +19,9 @@ extension Date {
     /// Further testing is required to make sure this function is still necessary.
     @inlinable
     public static func now() -> Date {
-        var d = Date.now
+        var d = Date()
         while Calendar.current.component(.year, from: d) < 2025 {
-            d = Date.now
+            d = Date()
         }
         return d
     }
